@@ -67,3 +67,11 @@ Then with window expansion, the model also includes:
 5. Final context is passed to **FLAN-T5 / GPT model** for answer generation.
 
 This hybrid setup ensures **maximum relevance, fluency, and factual accuracy** in the final answer.
+
+
+Their results showed that:
+- **HyDE (Hypothetical Document Embedding)** and **LLM-based Reranking** significantly improved *retrieval precision* compared to baseline RAG systems.  
+- **Sentence Window Retrieval** achieved the **highest retrieval precision**, though its *answer similarity* performance was less consistent.
+- Techniques like **MMR**, **Cohere rerank**, and **Multi-query** underperformed relative to baseline or offered negligible gains.
+
+Building on these findings, **our implementation of ARAGOG** operationalizes the research pipeline within real-world medical systems while integrating multimodal and domain-specific reasoning.
